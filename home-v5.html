@@ -224,9 +224,9 @@
 
     <!-- Banner Start -->
     <section class="relative z-[1]" >
-        <img class="absolute -z-[1] top-0 left-0 w-full h-full object-cover" src="./assets/img/home-v5/banner.jpg" alt="banner">
+        <img class="absolute -z-[1] top-0 left-0 w-full h-full object-cover object-top" src="./assets/img/home-v5/banner.jpg" alt="banner">
         <div class="container">
-            <div class="hv5-bnr-content max-w-full sm:max-w-[530px] xl:max-w-[654px] sm:ml-auto bg-primary/90 pb-[100px] pt-16 sm:py-[100px] xl:py-[130px] 2xl:py-[260px] px-5 sm:px-12 xl:px-[112px]">
+            <div class="hv5-bnr-content max-w-full sm:max-w-[530px] xl:max-w-[654px] sm:ml-auto bg-primary/90 py-16 sm:py-[100px] xl:py-[130px] 2xl:py-[170px] px-5 sm:px-12 xl:px-[112px]">
                 <!-- data-carousel-loop="true" -->
                 <div class="owl-carousel home-v5-banner"  data-carousel-dots="true" data-carousel-autoHeight="false">
                     <div class="home-v5-banner-content">
@@ -456,7 +456,7 @@
     </section>
     <!-- Service Area End -->
 
-    <div >
+    <div>
         <!-- Why Chose Start -->
         <div class="bg-overlay home-two-about s-py-112 before:bg-primary/70 overflow-hidden" style="background-image: url('assets/img/pages/about-02.jpg');">
     <div class="container">
@@ -1004,7 +1004,7 @@
                 <span class="text-lg leading-none font-semibold text-primary block h5-testimonial-title-sttr">Testimonial</span>
                 <h3 class="mt-2 md:mt-3 text-2xl leading-snug md:text-3xl md:leading-snug font-normal h5-testimonial-title-sttr">What Say's our satisfy user</h3>
             </div>
-            <div class="relative md:px-20 h5-testimonial-slider">
+            <div class="relative lg:px-20 h5-testimonial-slider">
                 <!-- Testimonials -->
                 <div class="relative md:px-20">
     <div class="max-w-[668px] mx-auto owl-carousel st_slider1 " data-carousel-margin="0" data-carousel-autoplay="false" data-carousel-loop="true">
@@ -1373,14 +1373,18 @@
                 <div class="max-w-full sm:max-w-none w-full sm:w-auto ftr-single-menu-3">
                     <h4 class="str-item text-2xl text-white leading-none font-semibold mb-2">Newsletter</h4>
                     <p class="str-item leading-normal mb-4 sm:mb-6 text-lighter-white">Subscribe our newsletter & get all update</p>
-                    <div class="str-item">
-                        <input class="h-12 p-3 border border-[#4F5666] outline-none bg-transparent transition-all duration-300 focus:border-primary placeholder:text-lighter-white dark:focus:border-primary w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address">
-                    </div>
-                    <div class="mt-4 str-item">
-                        <a href="javascript:void(0)" class="btn btn-primary border-primary btn-sm ">
-                            <span>Subscribe</span>
-                        </a>
-                    </div>
+                    <form action="#" id="newsletterForm">
+                        <div class="str-item">
+                            <input class="h-12 p-3 border border-[#4F5666] outline-none bg-transparent transition-all duration-300 focus:border-primary placeholder:text-lighter-white dark:focus:border-primary w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address" id="newsletterEmail" required>
+                        </div>
+                        <div class="mt-4 str-item">
+                            <button type="submit" class="btn btn-primary border-primary btn-sm ">
+                                <span>Subscribe</span>
+                            </button>
+                        </div>
+                    </form>
+                    <p id="newsletterErrorMessage" class="text-red-500" style="display: none;">Please enter a valid email address.</p>
+                    <p id="thankYouMessage" class="thank-you-message text-green-500" style="display: none;">Thank you for subscribing</p>
                 </div>
             </div>
         </div>

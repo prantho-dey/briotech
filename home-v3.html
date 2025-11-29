@@ -414,7 +414,7 @@
     <!-- Header End -->
 
     <!-- Banner Area start -->
-    <section class="overflow-hidden pb-16 sm:pb-24 pt-[50px] lg:pb-[200px] lg:pt-[200px] 2xl:pt-250px] relative 2xl:pb-[300px]"  id="home-v3-bnr-section">
+    <section class="home-v3-banner-area overflow-hidden pb-16 sm:pb-24 pt-[50px] lg:pb-[200px] lg:pt-[200px] 2xl:pt-250px] relative 2xl:pb-[300px]"  id="home-v3-bnr-section">
         <div class="container">
             <div class="max-w-1366 mx-auto">
                 <div class="max-w-[687px] ber-title-srt">
@@ -422,8 +422,12 @@
                     <h1 class=" mt-3 sm:mt-4 text-4xl sm:text-5xl md:text-6xl xl:text-7xl leading-tight font-light">Easy way to <span class="font-bold">Manage Over Work</span></h1>
                     <p class="sm:text-lg mt-4 sm:mt-6 max-w-[565px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lobortis in in tortor interdum fringilla euismod odio vitae nam.</p>
                     <div class="max-w-[435px] mt-4 sm:mt-6 md:mt-8 relative">
-                        <input type="email" placeholder="Enter email address" class="w-full h-12 rounded-[100px] bg-bg-black/10 dark:bg-dark-secondary p-4 pr-[90px] sm:pr-[125px] border-light-border dark:border-dark-border border outline-none duration-300 focus:border-purple text-text-black dark:text-white flex-1 dark:focus:border-purple">
-                        <button class="absolute right-0 top-0 sm:w-[123px] p-4 bg-purple rounded-[100px] text-white text-[15px] leading-none font-medium whitespace-nowrap">Try <span class="hidden sm:inline-block">it for</span> Free</button>
+                        <form action="#" class="flex relative" id="tryForFreeForm">
+                            <input type="email" placeholder="Enter email address" class="w-full h-12 rounded-[100px] bg-bg-black/10 dark:bg-dark-secondary p-4 pr-[90px] sm:pr-[125px] border-light-border dark:border-dark-border border outline-none duration-300 focus:border-purple text-text-black dark:text-white flex-1 dark:focus:border-purple" id="tryForFreeEmail" required>
+                            <button type="submit" class="absolute right-0 top-0 sm:w-[123px] p-4 bg-purple rounded-[100px] text-white text-[15px] leading-none font-medium whitespace-nowrap">Try <span class="hidden sm:inline-block">it for</span> Free</button>
+                        </form>
+                        <p id="tryForFreeErrorMessage" class="text-red-500" style="display: none;">Please enter a valid email address.</p>
+                        <p id="tryForFreeMessage" class="thank-you-message text-green-500" style="display: none;">Start your free trial today and experience the benefits!</p>
                     </div>
                     <p class="mt-3 sm:mt-4">Looking for help? <a href="contact.html" class="text-purple">Get in touch with us</a></p>
                 </div>
@@ -1057,14 +1061,18 @@
                 <div class="max-w-full sm:max-w-none w-full sm:w-auto ftr-single-menu-3">
                     <h4 class="text-2xl text-white leading-none font-semibold mb-2 str-item">Newsletter</h4>
                     <p class="leading-normal mb-4 sm:mb-6 text-lighter-white str-item">Subscribe our newsletter & get all update</p>
-                    <div class="str-item">
-                        <input class="h-12 p-3 border border-[#4F5666] outline-none bg-transparent transition-all duration-300 focus:border-purple placeholder:text-lighter-white dark:focus:border-purple w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address">
-                    </div>
-                    <div class="mt-4 str-item">
-                        <a href="javascript:void(0)" class="btn btn-purple btn-sm ">
-                            <span>Subscribe</span>
-                        </a>
-                    </div>
+                    <form action="#" id="newsletterForm">
+                        <div class="str-item">
+                            <input class="h-12 p-3 border border-[#4F5666] outline-none bg-transparent transition-all duration-300 focus:border-purple placeholder:text-lighter-white dark:focus:border-purple w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address" id="newsletterEmail" required>
+                        </div>
+                        <div class="mt-4 str-item">
+                            <button type="submit" class="btn btn-purple btn-sm ">
+                                <span>Subscribe</span>
+                            </button>
+                        </div>
+                    </form>
+                    <p id="newsletterErrorMessage" class="text-red-500" style="display: none;">Please enter a valid email address.</p>
+                    <p id="thankYouMessage" class="thank-you-message text-purple" style="display: none;">Thank you for subscribing</p>
                 </div>
             </div>
         </div>

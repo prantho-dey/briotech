@@ -576,7 +576,7 @@
             </div>
             <div class="flex items-center gap-4">
                 <div class="radius-stylist-image h-[62px] w-[62px] overflow-hidden">
-                    <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-01.png" alt="testimonial">
+                    <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-01.png" alt="Natalia Strewli">
                 </div>
                 <div class="flex-1">
                     <h6 class="text-lg leading-none font-medium">Natalia Strewli</h6>
@@ -596,7 +596,7 @@
             </div>
             <div class="flex items-center gap-4">
                 <div class="radius-stylist-image h-[62px] w-[62px] overflow-hidden">
-                    <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-02.png" alt="testimonial">
+                    <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-02.png" alt="Natalia Strewli">
                 </div>
                 <div class="flex-1">
                     <h6 class="text-lg leading-none font-medium">Natalia Strewli</h6>
@@ -616,7 +616,7 @@
             </div>
             <div class="flex items-center gap-4">
                 <div class="radius-stylist-image h-[62px] w-[62px] overflow-hidden">
-                    <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-03.png" alt="testimonial">
+                    <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-03.png" alt="Natalia Strewli">
                 </div>
                 <div class="flex-1">
                     <h6 class="text-lg leading-none font-medium">Natalia Strewli</h6>
@@ -642,7 +642,7 @@
                 <!-- Single Blog Card -->
                 <div class="h2-blog-sttr group bg-white rounded-xl dark:bg-dark-secondary duration-300 hover-shadow">
                     <a href="blog-details-v1.html" class="overflow-hidden rounded-t-xl block">
-                        <img class="w-full duration-300 rounded-t-xl transform group-hover:scale-110" src="./assets/img/blog/blog-01.jpg" alt="blog">
+                        <img class="w-full duration-300 rounded-t-xl transform group-hover:scale-110" src="./assets/img/blog/blog-01.jpg" alt="Blog Thumb">
                     </a>
                     <div class="p-5 md:p-6">
                         <h5 class="font-semibold text-lg"><a class="text-underline" href="blog-details-v2.html">Lorem ipsum of new business dolor sited amet this printing</a></h5>
@@ -658,7 +658,7 @@
                 <!-- Single Blog Card -->
                 <div class="h2-blog-sttr group bg-white rounded-xl dark:bg-dark-secondary duration-300 hover-shadow">
                     <a href="blog-details-v1.html" class="overflow-hidden rounded-t-xl block">
-                        <img class="w-full duration-300 rounded-t-xl transform group-hover:scale-110" src="./assets/img/blog/blog-02.jpg" alt="blog">
+                        <img class="w-full duration-300 rounded-t-xl transform group-hover:scale-110" src="./assets/img/blog/blog-02.jpg" alt="Blog Thumb">
                     </a>
                     <div class="p-5 md:p-6">
                         <h5 class="font-semibold text-lg"><a class="text-underline" href="blog-details-v2.html">New business dolor sited amet this far far away for new startup</a></h5>
@@ -674,7 +674,7 @@
                 <!-- Single Blog Card -->
                 <div class="h2-blog-sttr group bg-white rounded-xl dark:bg-dark-secondary duration-300 hover-shadow">
                     <a href="blog-details-v1.html" class="overflow-hidden rounded-t-xl block">
-                        <img class="w-full duration-300 rounded-t-xl transform group-hover:scale-110" src="./assets/img/blog/blog-03.jpg" alt="blog">
+                        <img class="w-full duration-300 rounded-t-xl transform group-hover:scale-110" src="./assets/img/blog/blog-03.jpg" alt="Blog Thumb">
                     </a>
                     <div class="p-5 md:p-6">
                         <h5 class="font-semibold text-lg"><a class="text-underline" href="blog-details-v2.html">Far far away for new business dolor sited amet this printing</a></h5>
@@ -709,29 +709,96 @@
             </div>
             <div class="max-w-[624px] lg:max-w-1366 mx-auto flex items-start justify-between gap-8 flex-col-reverse lg:flex-row">
                 <div class="h2-contact-from max-w-[624px] w-full">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
-                        <div class="w-full">
-                            <label class="dark:text-white leading-none text-text-black  font-medium block mb-3">First Name</label>
-                            <input class="box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary dark:text-white transition-all duration-300 w-full text-text-black " type="text" placeholder="Enter first name">
+                    <form action="#" novalidate class="demoForm">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+                            <div class="w-full">
+                                <label for="firstName" class="dark:text-white leading-none text-text-black  font-medium block mb-3">First Name</label>
+                                <div class="relative w-full">
+  <input
+    class=" box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white"
+    type="text"
+    placeholder="Enter first name"
+    name="firstName"
+    id="firstName"
+    autocomplete="off"
+    required
+    aria-describedby="firstName-error"
+  >
+  <p id="firstName-error" class="hidden mt-1 text-sm text-red-400 transition-opacity duration-300">
+    This field is required.
+  </p>
+</div>
+                            </div>
+                            <div class="w-full">
+                                <label for="lastName" class="dark:text-white leading-none text-text-black font-medium block mb-3">Last Name</label>
+                                <div class="relative w-full">
+  <input
+    class=" box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white"
+    type="text"
+    placeholder="Enter last name"
+    name="lastName"
+    id="lastName"
+    autocomplete="off"
+    required
+    aria-describedby="lastName-error"
+  >
+  <p id="lastName-error" class="hidden mt-1 text-sm text-red-400 transition-opacity duration-300">
+    This field is required.
+  </p>
+</div>
+                            </div>
+                            <div class="w-full">
+                                <label for="email" class="dark:text-white leading-none text-text-black font-medium block mb-3">Email Address</label>
+                                <div class="relative w-full">
+  <input
+    class=" box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white"
+    type="email"
+    placeholder="Enter email address"
+    name="email"
+    id="email"
+    autocomplete="email"
+    required
+    aria-describedby="email-error"
+  >
+  <p id="email-error" class="hidden mt-1 text-sm text-red-400 transition-opacity duration-300">
+    This field is required.
+  </p>
+</div>
+                            </div>
+                            <div class="w-full">
+                                <label for="question" class="dark:text-white leading-none text-text-black font-medium block mb-3">Your Question</label>
+                                <div class="relative w-full">
+  <input
+    class=" box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white"
+    type="text"
+    placeholder="Your Question"
+    name="question"
+    id="question"
+    autocomplete="off"
+    required
+    aria-describedby="question-error"
+  >
+  <p id="question-error" class="hidden mt-1 text-sm text-red-400 transition-opacity duration-300">
+    This field is required.
+  </p>
+</div>
+                            </div>
+                            <div class="sm:row-span-2 sm:col-span-2">
+                                <label class="dark:text-white leading-none text-text-black font-medium block mb-3">Your Comment</label>
+                                <textarea class="box-shadow2 rounded h-[142px] p-3 outline-none bg-white dark:bg-dark-secondary dark:text-white transition-all duration-300 w-full text-text-black resize-none" placeholder="Your text here..."></textarea>
+                            </div>
                         </div>
-                        <div class="w-full">
-                            <label class="dark:text-white leading-none text-text-black font-medium block mb-3">Last Name</label>
-                            <input class="box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary dark:text-white transition-all duration-300 w-full text-text-black" type="text" placeholder="Enter last name">
+                        <div>
+                            <button id="demoBtn" type="submit" class="btn btn-tertiary mt-4 sm:mt-6 lg:mt-12 fz-16">
+                                <span class="btn-text">Send Message</span>
+                                <svg class="loader hidden ml-2 w-5 h-5 animate-spin" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                                </svg>
+                            </button>
+                            <div class="hidden mt-3 formMessage"></div>
                         </div>
-                        <div class="w-full">
-                            <label class="dark:text-white leading-none text-text-black font-medium block mb-3">Email Address</label>
-                            <input class="box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary dark:text-white transition-all duration-300 w-full text-text-black" type="text" placeholder="Enter email address">
-                        </div>
-                        <div class="w-full">
-                            <label class="dark:text-white leading-none text-text-black font-medium block mb-3">Your Question</label>
-                            <input class="box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary dark:text-white transition-all duration-300 w-full text-text-black" type="text" placeholder="Your Question">
-                        </div>
-                        <div class="sm:row-span-2 sm:col-span-2">
-                            <label class="dark:text-white leading-none text-text-black font-medium block mb-3">Your Comment</label>
-                            <textarea class="box-shadow2 rounded h-[142px] p-3 outline-none bg-white dark:bg-dark-secondary dark:text-white transition-all duration-300 w-full text-text-black resize-none" placeholder="Your text here..."></textarea>
-                        </div>
-                    </div>
-                    <button class="btn btn-tertiary mt-4 sm:mt-6 lg:mt-12 fz-16">Send Message</button>
+                    </form>
                 </div>
                 <div class="max-w-[280px] xl:max-w-[590px] w-full">
                     <img class="location-pin" src="./assets/img/icon/location.png" alt="location">
@@ -971,14 +1038,18 @@
                 <div class="max-w-full sm:max-w-none w-full sm:w-auto ftr-single-menu-3">
                     <h4 class="text-2xl text-white leading-none font-semibold mb-2 str-item">Newsletter</h4>
                     <p class="leading-normal mb-4 sm:mb-6 text-lighter-white str-item">Subscribe our newsletter & get all update</p>
-                    <div class="str-item">
-                        <input class="h-12 p-3 border border-[#4F5666] outline-none bg-transparent transition-all duration-300 focus:border-tertiary placeholder:text-lighter-white dark:focus:border-tertiary w-full max-w-[350px] sm:max-w-none rounded " type="email" placeholder="Enter email address">
-                    </div>
-                    <div class="mt-4 str-item">
-                        <a href="javascript:void(0)" class="btn btn-tertiary btn-sm ">
-                            <span>Subscribe</span>
-                        </a>
-                    </div>
+                    <form action="#" id="newsletterForm">
+                        <div class="str-item">
+                            <input class="h-12 p-3 border border-[#4F5666] outline-none bg-transparent transition-all duration-300 focus:border-tertiary placeholder:text-lighter-white dark:focus:border-tertiary w-full max-w-[350px] sm:max-w-none rounded " type="email" placeholder="Enter email address" id="newsletterEmail" required>
+                        </div>
+                        <div class="mt-4 str-item">
+                            <button type="submit" class="btn btn-tertiary btn-sm ">
+                                <span>Subscribe</span>
+                            </button>
+                        </div>
+                    </form>
+                    <p id="newsletterErrorMessage" class="text-red-500" style="display: none;">Please enter a valid email address.</p>
+                    <p id="thankYouMessage" class="thank-you-message text-tertiary" style="display: none;">Thank you for subscribing</p>
                 </div>
             </div>
         </div>

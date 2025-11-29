@@ -1038,12 +1038,12 @@
         <div class="pricing-style-5">
             <ul class="flex justify-center gap-[10px] biz-nav-tab">
                 <li role="presentation" class="active">
-                    <a class="duration-300 py-[11px] px-[15px] border sm:text-lg leading-none sm:leading-none bg-primary/10 text-text-black dark:text-white rounded-md inline-block border-none" href="#biz-tab-content-4-1">
+                    <a class="duration-300 py-[11px] px-[15px] border sm:text-lg leading-none sm:leading-none bg-primary/10 text-text-black dark:text-white rounded-md inline-block border-none" href="#biz-tab-content-4-1" id="monthly-button">
                         Monthly
                     </a>
                 </li>
                 <li role="presentation">
-                    <a class="duration-300 py-[11px] px-[15px] border sm:text-lg leading-none sm:leading-none bg-primary/10 text-text-black dark:text-white rounded-md inline-block border-none " href="#biz-tab-content-4-2">
+                    <a class="duration-300 py-[11px] px-[15px] border sm:text-lg leading-none sm:leading-none bg-primary/10 text-text-black dark:text-white rounded-md inline-block border-none" href="#biz-tab-content-4-2" id="yearly-button">
                         Yearly
                     </a>
                 </li>
@@ -1184,53 +1184,106 @@
         
     </div>
     <!-- Content -->
-    <div class="flex-1 w-full sm:w-auto flex flex-col gap-4">
-        <div>
-            <label class="pricing-plan-check">
-                <input type="radio" class="hidden" name="pricing-plan" checked>
-                <span class="flex items-center justify-between gap-5 p-5 bg-white rounded-xl dark:bg-[#1D2335] cursor-pointer sm:flex-col md:flex-row relative border border-transparent duration-300">
-                    <span class="sm:max-w-[234px] lg:max-w-[434px] w-full inline-block sm:text-center md:text-left">
-                        <span class="text-text-black dark:text-white font-semibold text-xl leading-none block mb-3">Started</span>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh Auctor others sit of elementum.</span>
-                    </span>
-                    <span class="w-5 sm:w-6 h-5 sm:h-6 rounded-full border-[2px] border-primary flex items-center justify-center pricing-plan-checked absolute sm:relative top-[10px] right-[10px] sm:top-0 sm:right-0 before:absolute before:w-[10px] sm:before:w-3 before:h-[10px] sm:before:h-3 before:bg-primary before:rounded-full before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:top-1/2 before:left-1/2 before:opacity-0 before:duration-300 before:invisible">
-                        <!-- <span class="w-3 h-3 bg-primary rounded-full block transform opacity-0 duration-300 invisible"></span> -->
-                    </span>
-                    <span class="text-3xl leading-none sm:text-4xl sm:leading-none font-bold text-text-black dark:text-white max-w-[50px] sm:max-w-[70px] w-full"><sup class="text-xl font-medium">$</sup>18</span>
-                </span>
-            </label>
+     <div class="flex-1 w-full sm:w-auto">
+        <div class="monthly-pricing-plan">
+            <div class="flex flex-col gap-4">
+                <div>
+                    <label class="pricing-plan-check">
+                        <input type="radio" class="hidden" name="monthly-pricing-plan" checked>
+                        <span class="flex items-center justify-between gap-5 p-5 bg-white rounded-xl dark:bg-[#1D2335] cursor-pointer sm:flex-col md:flex-row relative border border-transparent duration-300">
+                            <span class="sm:max-w-[234px] lg:max-w-[434px] w-full inline-block sm:text-center md:text-left">
+                                <span class="text-text-black dark:text-white font-semibold text-xl leading-none block mb-3">Started</span>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh Auctor others sit of elementum.</span>
+                            </span>
+                            <span class="w-5 sm:w-6 h-5 sm:h-6 rounded-full border-[2px] border-primary flex items-center justify-center pricing-plan-checked absolute sm:relative top-[10px] right-[10px] sm:top-0 sm:right-0 before:absolute before:w-[10px] sm:before:w-3 before:h-[10px] sm:before:h-3 before:bg-primary before:rounded-full before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:top-1/2 before:left-1/2 before:opacity-0 before:duration-300 before:invisible">
+                                <!-- <span class="w-3 h-3 bg-primary rounded-full block transform opacity-0 duration-300 invisible"></span> -->
+                            </span>
+                            <span class="text-3xl leading-none sm:text-4xl sm:leading-none font-bold text-text-black dark:text-white"><sup class="text-xl font-medium">$</sup>18</span>
+                        </span>
+                    </label>
+                </div>
+                <div>
+                    <label class="pricing-plan-check">
+                        <input type="radio" class="hidden" name="monthly-pricing-plan">
+                        <span class="flex items-center justify-between gap-5 p-5 bg-white rounded-xl dark:bg-[#1D2335] cursor-pointer sm:flex-col md:flex-row relative border border-transparent duration-300">
+                            <span class="sm:max-w-[234px] lg:max-w-[434px] w-full inline-block sm:text-center md:text-left">
+                                <span class="text-text-black dark:text-white font-semibold text-xl leading-none block mb-3">Premium</span>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh Auctor others sit of elementum.</span>
+                            </span>
+                            <span class="w-5 sm:w-6 h-5 sm:h-6 rounded-full border-[2px] border-primary flex items-center justify-center pricing-plan-checked absolute sm:relative top-[10px] right-[10px] sm:top-0 sm:right-0 before:absolute before:w-[10px] sm:before:w-3 before:h-[10px] sm:before:h-3 before:bg-primary before:rounded-full before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:top-1/2 before:left-1/2 before:opacity-0 before:duration-300 before:invisible">
+                                <!-- <span class="w-3 h-3 bg-primary rounded-full block transform opacity-0 duration-300 invisible"></span> -->
+                            </span>
+                            <span class="text-3xl leading-none sm:text-4xl sm:leading-none font-bold text-text-black dark:text-white"><sup class="text-xl font-medium">$</sup>49</span>
+                        </span>
+                    </label>
+                </div>
+                <div>
+                    <label class="pricing-plan-check">
+                        <input type="radio" class="hidden" name="monthly-pricing-plan">
+                        <span class="flex items-center justify-between gap-5 p-5 bg-white rounded-xl dark:bg-[#1D2335] cursor-pointer sm:flex-col md:flex-row relative border border-transparent duration-300">
+                            <span class="sm:max-w-[234px] lg:max-w-[434px] w-full inline-block sm:text-center md:text-left">
+                                <span class="text-text-black dark:text-white font-semibold text-xl leading-none block mb-3">Pro</span>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh Auctor others sit of elementum.</span>
+                            </span>
+                            <span class="w-5 sm:w-6 h-5 sm:h-6 rounded-full border-[2px] border-primary flex items-center justify-center pricing-plan-checked absolute sm:relative top-[10px] right-[10px] sm:top-0 sm:right-0 before:absolute before:w-[10px] sm:before:w-3 before:h-[10px] sm:before:h-3 before:bg-primary before:rounded-full before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:top-1/2 before:left-1/2 before:opacity-0 before:duration-300 before:invisible">
+                                <!-- <span class="w-3 h-3 bg-primary rounded-full block transform opacity-0 duration-300 invisible"></span> -->
+                            </span>
+                            <span class="text-3xl leading-none sm:text-4xl sm:leading-none font-bold text-text-black dark:text-white"><sup class="text-xl font-medium">$</sup>99</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
         </div>
-        <div>
-            <label class="pricing-plan-check">
-                <input type="radio" class="hidden" name="pricing-plan">
-                <span class="flex items-center justify-between gap-5 p-5 bg-white rounded-xl dark:bg-[#1D2335] cursor-pointer sm:flex-col md:flex-row relative border border-transparent duration-300">
-                    <span class="sm:max-w-[234px] lg:max-w-[434px] w-full inline-block sm:text-center md:text-left">
-                        <span class="text-text-black dark:text-white font-semibold text-xl leading-none block mb-3">Premium</span>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh Auctor others sit of elementum.</span>
-                    </span>
-                    <span class="w-5 sm:w-6 h-5 sm:h-6 rounded-full border-[2px] border-primary flex items-center justify-center pricing-plan-checked absolute sm:relative top-[10px] right-[10px] sm:top-0 sm:right-0 before:absolute before:w-[10px] sm:before:w-3 before:h-[10px] sm:before:h-3 before:bg-primary before:rounded-full before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:top-1/2 before:left-1/2 before:opacity-0 before:duration-300 before:invisible">
-                        <!-- <span class="w-3 h-3 bg-primary rounded-full block transform opacity-0 duration-300 invisible"></span> -->
-                    </span>
-                    <span class="text-3xl leading-none sm:text-4xl sm:leading-none font-bold text-text-black dark:text-white max-w-[50px] sm:max-w-[70px] w-full"><sup class="text-xl font-medium">$</sup>49</span>
-                </span>
-            </label>
+        <div class="year-pricing-plan">
+            <div class="flex flex-col gap-4">
+                <div>
+                    <label class="pricing-plan-check">
+                        <input type="radio" class="hidden" name="yearly-pricing-plan" checked>
+                        <span class="flex items-center justify-between gap-5 p-5 bg-white rounded-xl dark:bg-[#1D2335] cursor-pointer sm:flex-col md:flex-row relative border border-transparent duration-300">
+                            <span class="sm:max-w-[234px] lg:max-w-[434px] w-full inline-block sm:text-center md:text-left">
+                                <span class="text-text-black dark:text-white font-semibold text-xl leading-none block mb-3">Started</span>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh Auctor others sit of elementum.</span>
+                            </span>
+                            <span class="w-5 sm:w-6 h-5 sm:h-6 rounded-full border-[2px] border-primary flex items-center justify-center pricing-plan-checked absolute sm:relative top-[10px] right-[10px] sm:top-0 sm:right-0 before:absolute before:w-[10px] sm:before:w-3 before:h-[10px] sm:before:h-3 before:bg-primary before:rounded-full before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:top-1/2 before:left-1/2 before:opacity-0 before:duration-300 before:invisible">
+                                <!-- <span class="w-3 h-3 bg-primary rounded-full block transform opacity-0 duration-300 invisible"></span> -->
+                            </span>
+                            <span class="text-3xl leading-none sm:text-4xl sm:leading-none font-bold text-text-black dark:text-white"><sup class="text-xl font-medium">$</sup>180</span>
+                        </span>
+                    </label>
+                </div>
+                <div>
+                    <label class="pricing-plan-check">
+                        <input type="radio" class="hidden" name="yearly-pricing-plan">
+                        <span class="flex items-center justify-between gap-5 p-5 bg-white rounded-xl dark:bg-[#1D2335] cursor-pointer sm:flex-col md:flex-row relative border border-transparent duration-300">
+                            <span class="sm:max-w-[234px] lg:max-w-[434px] w-full inline-block sm:text-center md:text-left">
+                                <span class="text-text-black dark:text-white font-semibold text-xl leading-none block mb-3">Premium</span>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh Auctor others sit of elementum.</span>
+                            </span>
+                            <span class="w-5 sm:w-6 h-5 sm:h-6 rounded-full border-[2px] border-primary flex items-center justify-center pricing-plan-checked absolute sm:relative top-[10px] right-[10px] sm:top-0 sm:right-0 before:absolute before:w-[10px] sm:before:w-3 before:h-[10px] sm:before:h-3 before:bg-primary before:rounded-full before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:top-1/2 before:left-1/2 before:opacity-0 before:duration-300 before:invisible">
+                                <!-- <span class="w-3 h-3 bg-primary rounded-full block transform opacity-0 duration-300 invisible"></span> -->
+                            </span>
+                            <span class="text-3xl leading-none sm:text-4xl sm:leading-none font-bold text-text-black dark:text-white"><sup class="text-xl font-medium">$</sup>490</span>
+                        </span>
+                    </label>
+                </div>
+                <div>
+                    <label class="pricing-plan-check">
+                        <input type="radio" class="hidden" name="yearly-pricing-plan">
+                        <span class="flex items-center justify-between gap-5 p-5 bg-white rounded-xl dark:bg-[#1D2335] cursor-pointer sm:flex-col md:flex-row relative border border-transparent duration-300">
+                            <span class="sm:max-w-[234px] lg:max-w-[434px] w-full inline-block sm:text-center md:text-left">
+                                <span class="text-text-black dark:text-white font-semibold text-xl leading-none block mb-3">Pro</span>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh Auctor others sit of elementum.</span>
+                            </span>
+                            <span class="w-5 sm:w-6 h-5 sm:h-6 rounded-full border-[2px] border-primary flex items-center justify-center pricing-plan-checked absolute sm:relative top-[10px] right-[10px] sm:top-0 sm:right-0 before:absolute before:w-[10px] sm:before:w-3 before:h-[10px] sm:before:h-3 before:bg-primary before:rounded-full before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:top-1/2 before:left-1/2 before:opacity-0 before:duration-300 before:invisible">
+                                <!-- <span class="w-3 h-3 bg-primary rounded-full block transform opacity-0 duration-300 invisible"></span> -->
+                            </span>
+                            <span class="text-3xl leading-none sm:text-4xl sm:leading-none font-bold text-text-black dark:text-white"><sup class="text-xl font-medium">$</sup>999</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
         </div>
-        <div>
-            <label class="pricing-plan-check">
-                <input type="radio" class="hidden" name="pricing-plan">
-                <span class="flex items-center justify-between gap-5 p-5 bg-white rounded-xl dark:bg-[#1D2335] cursor-pointer sm:flex-col md:flex-row relative border border-transparent duration-300">
-                    <span class="sm:max-w-[234px] lg:max-w-[434px] w-full inline-block sm:text-center md:text-left">
-                        <span class="text-text-black dark:text-white font-semibold text-xl leading-none block mb-3">Pro</span>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh Auctor others sit of elementum.</span>
-                    </span>
-                    <span class="w-5 sm:w-6 h-5 sm:h-6 rounded-full border-[2px] border-primary flex items-center justify-center pricing-plan-checked absolute sm:relative top-[10px] right-[10px] sm:top-0 sm:right-0 before:absolute before:w-[10px] sm:before:w-3 before:h-[10px] sm:before:h-3 before:bg-primary before:rounded-full before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:top-1/2 before:left-1/2 before:opacity-0 before:duration-300 before:invisible">
-                        <!-- <span class="w-3 h-3 bg-primary rounded-full block transform opacity-0 duration-300 invisible"></span> -->
-                    </span>
-                    <span class="text-3xl leading-none sm:text-4xl sm:leading-none font-bold text-text-black dark:text-white max-w-[50px] sm:max-w-[70px] w-full"><sup class="text-xl font-medium">$</sup>99</span>
-                </span>
-            </label>
-        </div>
-    </div>
+     </div>
 </div>
             </div>
             <!-- Pricing Plan style 06 -->
@@ -1469,14 +1522,18 @@
                 <div class="max-w-full sm:max-w-none w-full sm:w-auto ftr-single-menu-3">
                     <h4 class="text-2xl leading-none font-semibold mb-2 str-item">Newsletter</h4>
                     <p class="leading-normal mb-4 sm:mb-6 str-item">Subscribe our newsletter & get all update</p>
-                    <div class="str-item">
-                        <input class="h-12 p-3 border border-[#E9EAEB] dark:border-white/10 outline-none bg-transparent transition-all duration-300 focus:border-primary placeholder:text-text-pragraph dark:placeholder:text-lighter-white dark:focus:border-primary w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address">
-                    </div>
-                    <div class="mt-4 str-item">
-                        <a href="javascript:void(0)" class="btn btn-primary btn-sm ">
-                            <span>Subscribe</span>
-                        </a>
-                    </div>
+                    <form action="#" id="newsletterForm" novalidate>
+                        <div class="str-item">
+                            <input class="h-12 p-3 border border-[#E9EAEB] dark:border-white/10 outline-none bg-transparent transition-all duration-300 focus:border-primary placeholder:text-text-pragraph dark:placeholder:text-lighter-white dark:focus:border-primary w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address" id="newsletterEmail" required>
+                        </div>
+                        <div class="mt-4 str-item">
+                            <button type="submit" class="btn btn-primary btn-sm">
+                                <span>Subscribe</span>
+                            </button>
+                        </div>
+                    </form>
+                    <p id="newsletterErrorMessage" class="text-red-500" style="display: none;">Please enter a valid email address.</p>
+                    <p id="thankYouMessage" class="thank-you-message text-green-500" style="display: none;">Thank you for subscribing</p>
                 </div>
             </div>
         </div>

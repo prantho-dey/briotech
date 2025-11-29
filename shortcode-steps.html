@@ -714,14 +714,18 @@
                 <div class="max-w-full sm:max-w-none w-full sm:w-auto ftr-single-menu-3">
                     <h4 class="text-2xl leading-none font-semibold mb-2 str-item">Newsletter</h4>
                     <p class="leading-normal mb-4 sm:mb-6 str-item">Subscribe our newsletter & get all update</p>
-                    <div class="str-item">
-                        <input class="h-12 p-3 border border-[#E9EAEB] dark:border-white/10 outline-none bg-transparent transition-all duration-300 focus:border-primary placeholder:text-text-pragraph dark:placeholder:text-lighter-white dark:focus:border-primary w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address">
-                    </div>
-                    <div class="mt-4 str-item">
-                        <a href="javascript:void(0)" class="btn btn-primary btn-sm ">
-                            <span>Subscribe</span>
-                        </a>
-                    </div>
+                    <form action="#" id="newsletterForm" novalidate>
+                        <div class="str-item">
+                            <input class="h-12 p-3 border border-[#E9EAEB] dark:border-white/10 outline-none bg-transparent transition-all duration-300 focus:border-primary placeholder:text-text-pragraph dark:placeholder:text-lighter-white dark:focus:border-primary w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address" id="newsletterEmail" required>
+                        </div>
+                        <div class="mt-4 str-item">
+                            <button type="submit" class="btn btn-primary btn-sm">
+                                <span>Subscribe</span>
+                            </button>
+                        </div>
+                    </form>
+                    <p id="newsletterErrorMessage" class="text-red-500" style="display: none;">Please enter a valid email address.</p>
+                    <p id="thankYouMessage" class="thank-you-message text-green-500" style="display: none;">Thank you for subscribing</p>
                 </div>
             </div>
         </div>

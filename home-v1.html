@@ -417,16 +417,20 @@
     <!-- Header End -->
 
     <!-- Banner Area Start -->
-    <section class="s-py-112" >
+    <section class="s-py-112 home-v1-banner">
         <div class="container">
             <div class="flex items-center justify-between gap-8 flex-col lg:flex-row">
                 <div class="max-w-[700px] w-full home-1-content">
                     <span class="text-lg font-medium leading-none text-primary home-banner-anim1 block">Briotech Business</span>
                     <h1 class="mt-3 sm:mt-4 text-4xl sm:text-5xl md:text-6xl xl:text-7xl leading-none font-light home-banner-anim1">Start to Build & Grow Up Your <span class="font-bold">Business</span></h1>
                     <p class="sm:text-lg mt-4 sm:mt-6 home-banner-anim1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lobortis in in tortor lectus iaculis viverra. Adipiscing lobortis interdum fringilla euismod odio vitae nam.</p>
-                    <div class="flex max-w-[435px] mt-4 sm:mt-6 md:mt-8 home-banner-anim1">
-                        <input type="email" placeholder="Enter email address" class="h-12 w-full rounded-l-md bg-white dark:bg-dark-secondary p-4 pr-2 border-light-border dark:border-dark-border border border-r-0 outline-none focus:border-primary text-text-black dark:text-white flex-1 dark:focus:border-primary">
-                        <button class="sm:w-[123px] p-4 bg-primary rounded-r-md text-white text-[15px] leading-none font-medium whitespace-nowrap">Try <span class="hidden sm:inline-block">it for</span> Free</button>
+                    <div class="max-w-[435px] mt-4 sm:mt-6 md:mt-8 home-banner-anim1">
+                        <form action="#" class="flex" id="tryForFreeForm">
+                            <input type="email" placeholder="Enter email address" class="h-12 w-full rounded-l-md bg-white dark:bg-dark-secondary p-4 pr-2 border-light-border dark:border-dark-border border border-r-0 outline-none focus:border-primary text-text-black dark:text-white flex-1 dark:focus:border-primary" id="tryForFreeEmail" required>
+                            <button type="submit" class="sm:w-[123px] p-4 bg-primary rounded-r-md text-white text-[15px] leading-none font-medium whitespace-nowrap">Try <span class="hidden sm:inline-block">it for</span> Free</button>
+                        </form>
+                        <p id="tryForFreeErrorMessage" class="text-red-500" style="display: none;">Please enter a valid email address.</p>
+                        <p id="tryForFreeMessage" class="thank-you-message text-green-500" style="display: none;">Start your free trial today and experience the benefits!</p>
                     </div>
                     <p class="mt-3 sm:mt-4 home-banner-anim1">Looking for help? <a href="contact.html" class="text-primary">Get in touch with us</a></p>
                 </div>
@@ -775,7 +779,7 @@
             </div>
             <div>
                 <div class="radius-stylist-image inline-flex items-center justify-center mx-auto w-[88px] h-[88px] overflow-hidden">
-                    <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-01.png" alt="testimonial">
+                    <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-01.png" alt="Natalia Strewli">
                 </div>
                 <div class="mt-4">
                     <h6 class="text-lg leading-none font-medium">Natalia Strewli</h6>
@@ -795,7 +799,7 @@
             </div>
             <div>
                 <div class="radius-stylist-image inline-flex items-center justify-center mx-auto w-[88px] h-[88px] overflow-hidden">
-                    <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-02.png" alt="testimonial">
+                    <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-02.png" alt="Jenny Smith Doe">
                 </div>
                 <div class="mt-4">
                     <h6 class="text-lg leading-none font-medium">Jenny Smith Doe</h6>
@@ -815,7 +819,7 @@
             </div>
             <div>
                 <div class="radius-stylist-image inline-flex items-center justify-center mx-auto w-[88px] h-[88px] overflow-hidden">
-                    <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-03.png" alt="testimonial">
+                    <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-03.png" alt="Natalia Strewli">
                 </div>
                 <div class="mt-4">
                     <h6 class="text-lg leading-none font-medium">Natalia Strewli</h6>
@@ -840,29 +844,96 @@
                 <div id="h1-get-in-touch-content" class="lg:max-w-[624px] w-full">
                     <h3 class="get-touch-cnt-stgr text-2xl sm:leading-none sm:text-3xl leading-none">Get in Touch</h3>
                     <p class="get-touch-cnt-stgr max-w-[542px] mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, lobortis in this tortor lectus  sit maet of this is conquer habitant . </p>
-                    <div class="get-touch-cnt-stgr mt-6 sm:mt-12 grid sm:grid-cols-2 gap-y-4 gap-x-6">
-                        <div>
-                            <label class="leading-none text-text-black dark:text-white font-medium block mb-3">First Name</label>
-                            <input class="box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white" type="text" placeholder="Enter first name">
+                    <form action="#" novalidate class="demoForm">
+                        <div class="get-touch-cnt-stgr mt-6 sm:mt-12 grid sm:grid-cols-2 gap-y-4 gap-x-6">
+                            <div>
+                                <label for="firstName" class="leading-none text-text-black dark:text-white font-medium block mb-3">First Name</label>
+                                <div class="relative w-full">
+  <input
+    class=" box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white"
+    type="text"
+    placeholder="Enter first name"
+    name="firstName"
+    id="firstName"
+    autocomplete="off"
+    required
+    aria-describedby="firstName-error"
+  >
+  <p id="firstName-error" class="hidden mt-1 text-sm text-red-400 transition-opacity duration-300">
+    This field is required.
+  </p>
+</div>
+                            </div>
+                            <div>
+                                <label for="lastName" class="leading-none text-text-black dark:text-white font-medium block mb-3">Last Name</label>
+                                <div class="relative w-full">
+  <input
+    class=" box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white"
+    type="text"
+    placeholder="Enter last name"
+    name="lastName"
+    id="lastName"
+    autocomplete="off"
+    required
+    aria-describedby="lastName-error"
+  >
+  <p id="lastName-error" class="hidden mt-1 text-sm text-red-400 transition-opacity duration-300">
+    This field is required.
+  </p>
+</div>
+                            </div>
+                            <div>
+                                <label for="email" class="leading-none text-text-black dark:text-white font-medium block mb-3">Email Address</label>
+                                <div class="relative w-full">
+  <input
+    class=" box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white"
+    type="email"
+    placeholder="Enter email address"
+    name="email"
+    id="email"
+    autocomplete="email"
+    required
+    aria-describedby="email-error"
+  >
+  <p id="email-error" class="hidden mt-1 text-sm text-red-400 transition-opacity duration-300">
+    This field is required.
+  </p>
+</div>
+                            </div>
+                            <div class="row-span-2 order-last sm:order-none">
+                                <label class="leading-none text-text-black dark:text-white font-medium block mb-3">Your Comment</label>
+                                <textarea class="box-shadow2 rounded h-[142px] p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white resize-none" placeholder="Your text here . . ."></textarea>
+                            </div>
+                            <div>
+                                <label for="question" class="leading-none text-text-black dark:text-white font-medium block mb-3">Your Question</label>
+                                <div class="relative w-full">
+  <input
+    class=" box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white"
+    type="text"
+    placeholder="Your Question"
+    name="question"
+    id="question"
+    autocomplete="off"
+    required
+    aria-describedby="question-error"
+  >
+  <p id="question-error" class="hidden mt-1 text-sm text-red-400 transition-opacity duration-300">
+    This field is required.
+  </p>
+</div>
+                            </div>
                         </div>
                         <div>
-                            <label class="leading-none text-text-black dark:text-white font-medium block mb-3">Last Name</label>
-                            <input class="box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white" type="text" placeholder="Enter last name">
+                            <button id="demoBtn" type="submit" class="get-touch-cnt-stgr btn btn-primary mt-4 sm:mt-6 lg:mt-12 fz-16">
+                                <span class="btn-text">Send Message</span>
+                                <svg class="loader hidden ml-2 w-5 h-5 animate-spin" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                                </svg>
+                            </button>
+                            <div class="hidden mt-3 formMessage"></div>
                         </div>
-                        <div>
-                            <label class="leading-none text-text-black dark:text-white font-medium block mb-3">Email Address</label>
-                            <input class="box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white" type="text" placeholder="Enter email address">
-                        </div>
-                        <div class="row-span-2 order-last sm:order-none">
-                            <label class="leading-none text-text-black dark:text-white font-medium block mb-3">Your Comment</label>
-                            <textarea class="box-shadow2 rounded h-[142px] p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white resize-none" placeholder="Your text here . . ."></textarea>
-                        </div>
-                        <div>
-                            <label class="leading-none text-text-black dark:text-white font-medium block mb-3">Your Question</label>
-                            <input class="box-shadow2 rounded h-12 p-3 outline-none bg-white dark:bg-dark-secondary transition-all duration-300 w-full text-text-black dark:text-white" type="text" placeholder="Your Question">
-                        </div>
-                    </div>
-                    <button class="get-touch-cnt-stgr btn btn-primary mt-4 sm:mt-6 lg:mt-12 fz-16">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -949,14 +1020,18 @@
                 <div class="max-w-full sm:max-w-none w-full sm:w-auto ftr-single-menu-3">
                     <h4 class="text-2xl leading-none font-semibold mb-2 str-item">Newsletter</h4>
                     <p class="leading-normal mb-4 sm:mb-6 str-item">Subscribe our newsletter & get all update</p>
-                    <div class="str-item">
-                        <input class="h-12 p-3 border border-[#E9EAEB] dark:border-white/10 outline-none bg-transparent transition-all duration-300 focus:border-primary placeholder:text-text-pragraph dark:placeholder:text-lighter-white dark:focus:border-primary w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address">
-                    </div>
-                    <div class="mt-4 str-item">
-                        <a href="javascript:void(0)" class="btn btn-primary btn-sm ">
-                            <span>Subscribe</span>
-                        </a>
-                    </div>
+                    <form action="#" id="newsletterForm" novalidate>
+                        <div class="str-item">
+                            <input class="h-12 p-3 border border-[#E9EAEB] dark:border-white/10 outline-none bg-transparent transition-all duration-300 focus:border-primary placeholder:text-text-pragraph dark:placeholder:text-lighter-white dark:focus:border-primary w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address" id="newsletterEmail" required>
+                        </div>
+                        <div class="mt-4 str-item">
+                            <button type="submit" class="btn btn-primary btn-sm">
+                                <span>Subscribe</span>
+                            </button>
+                        </div>
+                    </form>
+                    <p id="newsletterErrorMessage" class="text-red-500" style="display: none;">Please enter a valid email address.</p>
+                    <p id="thankYouMessage" class="thank-you-message text-green-500" style="display: none;">Thank you for subscribing</p>
                 </div>
             </div>
         </div>

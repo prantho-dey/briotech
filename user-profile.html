@@ -467,11 +467,11 @@
                         <p class="text-[#4F5666] dark:text-lighter-white mt-2">English , Spanish , Bangla</p>
                         <h6 class="mt-5 font-medium leading-none">Website</h6>
                         <p class="text-[#4F5666] dark:text-lighter-white mt-2">
-                            <a href="www.johnprofile.com" target="_blank" class="flex items-center gap-2 duration-300 hover:text-primary">
+                            <a href="javascript:void(0)" class="flex items-center gap-2 duration-300 hover:text-primary">
                                 www.johnprofile.com 
                                 <svg class="fill-current" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2.29394 0.548828L2.33196 1.94659L7.78141 2.10155L0.119141 9.96446L1.11941 10.9905L8.78168 3.12763L8.93375 8.71867L10.2961 8.75742L10.0789 0.770205L2.29394 0.548828Z"/>
-                                </svg>                                
+                                </svg>
                             </a>
                         </p>
                     </div>
@@ -644,14 +644,18 @@
                 <div class="max-w-full sm:max-w-none w-full sm:w-auto ftr-single-menu-3">
                     <h4 class="text-2xl leading-none font-semibold mb-2 str-item">Newsletter</h4>
                     <p class="leading-normal mb-4 sm:mb-6 str-item">Subscribe our newsletter & get all update</p>
-                    <div class="str-item">
-                        <input class="h-12 p-3 border border-[#E9EAEB] dark:border-white/10 outline-none bg-transparent transition-all duration-300 focus:border-primary placeholder:text-text-pragraph dark:placeholder:text-lighter-white dark:focus:border-primary w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address">
-                    </div>
-                    <div class="mt-4 str-item">
-                        <a href="javascript:void(0)" class="btn btn-primary btn-sm ">
-                            <span>Subscribe</span>
-                        </a>
-                    </div>
+                    <form action="#" id="newsletterForm" novalidate>
+                        <div class="str-item">
+                            <input class="h-12 p-3 border border-[#E9EAEB] dark:border-white/10 outline-none bg-transparent transition-all duration-300 focus:border-primary placeholder:text-text-pragraph dark:placeholder:text-lighter-white dark:focus:border-primary w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address" id="newsletterEmail" required>
+                        </div>
+                        <div class="mt-4 str-item">
+                            <button type="submit" class="btn btn-primary btn-sm">
+                                <span>Subscribe</span>
+                            </button>
+                        </div>
+                    </form>
+                    <p id="newsletterErrorMessage" class="text-red-500" style="display: none;">Please enter a valid email address.</p>
+                    <p id="thankYouMessage" class="thank-you-message text-green-500" style="display: none;">Thank you for subscribing</p>
                 </div>
             </div>
         </div>

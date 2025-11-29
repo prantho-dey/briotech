@@ -415,7 +415,7 @@
     <!-- Header End -->
 
     <!-- Banner Start -->
-    <section class="bg-secondary pt-[150px] sm:pt-[200px] lg:pt-[240px] xl:pt-[250px] 2xl:pt-[412px] pb-12 sm:pb-[100px] lg:pb-[120px] xl:pb-[150px] 2xl:pb-[280px] relative overflow-hidden" >
+    <section class="home-v4-banner-area bg-secondary pt-[150px] sm:pt-[200px] lg:pt-[240px] xl:pt-[250px] 2xl:pt-[350px] pb-12 sm:pb-[100px] lg:pb-[120px] xl:pb-[150px] 2xl:pb-[200px] relative overflow-hidden" >
         <div class="container">
             <div class="flex items-center justify-between flex-col sm:flex-row gap-6 sm:gap-0">
                 <div class="max-w-[420px] lg:max-w-[524px] w-full">
@@ -799,7 +799,7 @@
                                 </div>
                                 <div class="flex items-center gap-4">
                                     <div class="radius-stylist-image w-[62px] h-[62px]">
-                                        <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-01.png" alt="testimonial">
+                                        <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-01.png" alt="Natalia Strewli">
                                     </div>
                                     <div class="flex-1">
                                         <h6 class="text-lg leading-none font-medium text-text-black dark:text-white">Natalia Strewli</h6>
@@ -818,7 +818,7 @@
                                 </div>
                                 <div class="flex items-center gap-4">
                                     <div class="radius-stylist-image w-[62px] h-[62px]">
-                                        <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-02.png" alt="testimonial">
+                                        <img class="w-full h-full object-cover" src="./assets/img/team-member/team1-02.png" alt="Strewli Natalia">
                                     </div>
                                     <div class="flex-1">
                                         <h6 class="text-lg leading-none font-medium text-text-black dark:text-white">Strewli Natalia</h6>
@@ -1086,12 +1086,16 @@
             <div class="max-w-full sm:max-w-[313px] w-full order-last lg:order-none">
                 <h4 class="text-2xl text-white leading-none font-semibold mb-2">Newsletter</h4>
                 <p class="leading-normal mb-4 sm:mb-6 text-lighter-white">Subscribe our newsletter & get all update</p>
-                <input class="h-12 p-3 border border-[#4F5666] outline-none bg-transparent transition-all duration-300 focus:border-secondary placeholder:text-lighter-white dark:focus:border-secondary w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address">
-                <div class="mt-4">
-                    <a href="javascript:void(0)" class="btn btn-emarland btn-sm ">
-                        <span>Subscribe</span>
-                    </a>
-                </div>
+                <form action="#" id="newsletterForm">
+                    <input class="h-12 p-3 border border-[#4F5666] outline-none bg-transparent transition-all duration-300 focus:border-secondary placeholder:text-lighter-white dark:focus:border-secondary w-full max-w-[350px] sm:max-w-none rounded" type="email" placeholder="Enter email address" id="newsletterEmail" required>
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-emarland btn-sm ">
+                            <span>Subscribe</span>
+                        </button>
+                    </div>
+                </form>
+                <p id="newsletterErrorMessage" class="text-red-500" style="display: none;">Please enter a valid email address.</p>
+                <p id="thankYouMessage" class="thank-you-message text-green-500" style="display: none;">Thank you for subscribing</p>
             </div>
             <div class="sm:max-w-[500px] lg:max-w-[343px] w-full sm:text-center lg:text-left sm:mx-auto lg:mx-0">
                 <a href="home-v1.html" class="w-[148px] block lg:mx-0 sm:mx-auto">
